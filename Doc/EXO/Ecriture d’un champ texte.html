@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+</form>
+<input id="Case_1" type="text" name="case1" value="" />
+<input type="button" value="GO" id="sub_GO") />
+<input id="Case_2" type="text" name="case2" value="" />
+</body>
+<script>
+    function Transfer() {
+        Valeur_1 = Case_1.value
+        Valeur_2 = Case_2.value
+        Case_1.value=Valeur_2
+        Case_2.value=Valeur_1
+    }
+    sub_GO.addEventListener("click",Transfer)
+</script>
+</html>

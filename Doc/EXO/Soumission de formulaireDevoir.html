@@ -5,16 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+<form id=form_all>
     <input id="text_go" type="text" name="qqch" value="" />
-    <input type="submit" value="GO" id="sub_GO") /> </form>
+    <input type="button" value="GO" id="sub_GO") /> </form>
 </body>
 <script>
 
     function AlertText() {
-        alert(''+text_go.value)
+        if (text_go.value!==""){
+            alert(text_go.value)
+            form_all.submit(text_go.value)
+        } else {
+            alert("Warning")
+        }
     }
-
     sub_GO.addEventListener("click",AlertText)
 
 </script>
