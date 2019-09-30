@@ -17,6 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -29,6 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,6 +72,7 @@
       <workItem from="1568295484484" duration="2314000" />
       <workItem from="1569239862156" duration="6275000" />
       <workItem from="1569505877124" duration="3754000" />
+      <workItem from="1569844607086" duration="6888000" />
     </task>
     <servers />
   </component>
