@@ -32,6 +32,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/tools/php73/php.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -74,7 +75,7 @@
       <workItem from="1569505877124" duration="3754000" />
       <workItem from="1569844607086" duration="6888000" />
       <workItem from="1570189008950" duration="5020000" />
-      <workItem from="1570448270369" duration="2858000" />
+      <workItem from="1570448270369" duration="6983000" />
     </task>
     <servers />
   </component>
