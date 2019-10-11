@@ -51,7 +51,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.Server ICT-120">
+    <configuration name="JS.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="JS.js" working-dir="$PROJECT_DIR$/Exercice/JS">
+      <method v="2" />
+    </configuration>
     <configuration name="Server ICT-120" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
       <method v="2" />
     </configuration>
@@ -76,6 +79,7 @@
       <workItem from="1569844607086" duration="6888000" />
       <workItem from="1570189008950" duration="5020000" />
       <workItem from="1570448270369" duration="6983000" />
+      <workItem from="1570793720955" duration="4414000" />
     </task>
     <servers />
   </component>

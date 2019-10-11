@@ -9,7 +9,9 @@ function init() {
     D5.addEventListener("click", Div5)
     ED6.addEventListener("keyup", Div6)
     BoutonParter.style.display = "none"
-    BoutonAVM.addEventListener("click", Div72)
+    BoutonAVM.addEventListener("click", AWM)
+    BoutonPret.addEventListener("click", Pret)
+    BoutonParter.addEventListener("click", Parter)
 
 }
 
@@ -59,12 +61,44 @@ function Div6() {
     console.log(inisale)
     SD6.value = inisale.toUpperCase()
 }
+function Pret() {
 
+    BoutonAVM.disabled=true;
+    BoutonPret.disabled=true;
+    BoutonParter.disabled=false;
 
-function Div72() {
-    BoutonAVM.disabled=true
-    BoutonPret.disabled=false
-    BoutonParter.style.display="on"
+    BoutonParter.style.display = "inline";
+    BoutonPret.style.display = "inline";
+    BoutonAVM.style.display = "none";
 
 }
+function AWM() {
 
+    BoutonAVM.disabled=true;
+    BoutonPret.disabled=false;
+    BoutonParter.disabled=true;
+
+    BoutonParter.style.display = "inline";
+    BoutonPret.style.display = "inline";
+    BoutonAVM.style.display = "inline";
+
+}
+function Parter() {
+    BoutonAVM.disabled=true;
+    BoutonPret.disabled=true;
+    BoutonParter.disabled=true;
+
+    BoutonParter.style.display = "none";
+    BoutonPret.style.display = "inline";
+    BoutonAVM.style.display = "none";
+    setTimeout(Timeout, 3 * 1000);
+}
+function Timeout() {
+    BoutonAVM.disabled=false;
+    BoutonPret.disabled=true;
+    BoutonParter.disabled=true;
+
+    BoutonParter.style.display = "none";
+    BoutonPret.style.display = "inline";
+    BoutonAVM.style.display = "inline";
+}
