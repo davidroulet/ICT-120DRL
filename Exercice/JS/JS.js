@@ -12,6 +12,7 @@ function init() {
     BoutonAVM.addEventListener("click", AWM)
     BoutonPret.addEventListener("click", Pret)
     BoutonParter.addEventListener("click", Parter)
+    MyImage.src="Img/empty.png"
 
 }
 
@@ -70,6 +71,7 @@ function Pret() {
     BoutonParter.style.display = "inline";
     BoutonPret.style.display = "inline";
     BoutonAVM.style.display = "none";
+    MyImage.src="Img/set.png"
 
 }
 function AWM() {
@@ -81,7 +83,7 @@ function AWM() {
     BoutonParter.style.display = "inline";
     BoutonPret.style.display = "inline";
     BoutonAVM.style.display = "inline";
-
+    MyImage.src="Img/marks.png"
 }
 function Parter() {
     BoutonAVM.disabled=true;
@@ -91,6 +93,7 @@ function Parter() {
     BoutonParter.style.display = "none";
     BoutonPret.style.display = "inline";
     BoutonAVM.style.display = "none";
+    MyImage.src="Img/go.png"
     setTimeout(Timeout, 3 * 1000);
 }
 function Timeout() {
@@ -101,4 +104,6 @@ function Timeout() {
     BoutonParter.style.display = "none";
     BoutonPret.style.display = "inline";
     BoutonAVM.style.display = "inline";
+    MyImage.src="Img/empty.png"
+
 }
