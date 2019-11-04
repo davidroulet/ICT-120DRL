@@ -1,6 +1,10 @@
 .centre{
     text-align: center;
+
 }
 .taille{
-    height: 100px;
+    width: 50px;
+}
+.pages{
+    border:4px solid black;
 }
