@@ -1,7 +1,10 @@
+//DAvid Roulet DRT
+// 10.11.2019
+// Projet Voyage d'edute
+//
 document.addEventListener("DOMContentLoaded", init)
 
-function init() {
-    console.log("JSTL")
+function init() { // Fonction d'inisalisation
     BTNMOD.addEventListener("click", MOD)
     BTNADD.addEventListener("click", ADD)
     BTNREM.addEventListener("click", REM)
@@ -9,12 +12,12 @@ function init() {
     BTNADD.classList.add("d-none")
 }
 
-function MOD() {
+function MOD() { // Fonction de modification
     BTNREM.classList.remove("d-none")
     BTNADD.classList.remove("d-none")
     BTNMOD.classList.add("d-none")
     document.getElementById("CHENRH").classList.remove("d-none")
-    for (i = 1; i < Nb + 1; i++) {
+    for (i = 1; i < Nb + 1; i++) { // Affiche les Ligne avec les CheckBox
         var NomEl
         NomEl = "Ligne" + i
         document.getElementById(NomEl).classList.remove("d-none")
@@ -22,21 +25,18 @@ function MOD() {
     TableADD.classList.remove("d-none")
 }
 
-function ADD() {
-    if (PLA.value.length == 0 || MAJ.value.length == 0 || NAME.value.length == 0 || PNAME.value.length == 0) {
+function ADD() { //Fonction Ajout
+    if (PLA.value.length == 0 || MAJ.value.length == 0 || NAME.value.length == 0 || PNAME.value.length == 0) { // Verification que les champs sont bien rempli
         alert("Il manque des Inforamtion!")
-    } else {
+    } else { // Ajoute une nouvelle ligne et complete tout les case Non rempli (N.,Initaile,Majeur,et ajoute la case avec la checkbos)
         Nb++
         inisale = ""
         longeur = 0
         Space = ""
         inisale = PNAME.value.substr(0, 1)
-        console.log(inisale)
         inisale = inisale + NAME.value.substr(0, 1)
-        console.log(inisale)
         longeur = NAME.value.length
         inisale = inisale + NAME.value.substr(longeur - 1, 1)
-        console.log(inisale)
         newtr = document.createElement("tr")
         newTd1 = document.createElement("td")
         newTd2 = document.createElement("td")
@@ -72,9 +72,9 @@ function ADD() {
         Table.appendChild(newtr)
     }
 }
-var Nb = 4;
-function REM() {
-    for (i = 1; i < Nb + 1; i++) {
+var Nb = 4; // Nb d'enrgistrement
+function REM() { //Fonction Supprimé
+    for (i = 1; i < Nb + 1; i++) { // Vas verifié tout les ligne qui sont cochée et les cache
         IDC = "CHENR" + i
         IDCC = document.getElementById(IDC).checked
         if (IDCC == true) {
