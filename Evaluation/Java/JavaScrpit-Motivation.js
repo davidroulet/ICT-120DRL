@@ -18,7 +18,7 @@ function init() { // Fonction qui vas ce lancé une fois la fin du chargement de
     var EmplacmentPNameFin
     var PName
     EmplacmentPName=Link.indexOf("=") // Cherche l'emplacment du bebut de Pernom
-    EmplacmentPNameFin=Link.indexOf("+") // Cherche l' emplacment de la fin du Prenom
+    EmplacmentPNameFin=Link.indexOf("&") // Cherche l' emplacment de la fin du Prenom
     PName = Link.substr(EmplacmentPName+1,EmplacmentPNameFin-EmplacmentPName-1) // Vas Selectioné le Prenom a l aide des 2 Variable précédente
     NameM.innerText=Name // Vas affichier le Nom Trouvé
     PNameM.innerText=PName // vas affichier le Prenom Trouvé
