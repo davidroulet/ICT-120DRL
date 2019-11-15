@@ -37,7 +37,7 @@ function TextZ() { //Fonction permetant de gerée la longeur du texte insi que d
         Desc.classList.remove("d-none")
         Ok.classList.add("d-none")
         NbRD.classList.add("d-none")
-    } // ce if vas limité le texte a 144 caratere
+    } // ce if vas limité le texte avec le bon nombre de caratre 
     if(TextZone.value.length>LimitT){
         TextZone.value=TextZone.value.substr(0,LimitT)
     }
