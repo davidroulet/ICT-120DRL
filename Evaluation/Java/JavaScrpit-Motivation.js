@@ -29,7 +29,7 @@ function TextZ() { //Fonction permetant de gerée la longeur du texte insi que d
     if(NbC<0){ // Vas mettre le conteur de caraitre restant a 0 pour evité les -1 -2 etc
         NbR.innerText=0
     }
-    if(TextZone.value.length>30){ // Ce if vas verrifié que le texte et bien supperieur a 30 et vas affichier les bon elements ou les faire dispataire
+    if(TextZone.value.length>=30){ // Ce if vas verrifié que le texte et bien supperieur a 30 et vas affichier les bon elements ou les faire dispataire
         Desc.classList.add("d-none")
         Ok.classList.remove("d-none")
         NbRD.classList.remove("d-none")
