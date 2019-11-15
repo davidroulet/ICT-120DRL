@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <script src="Java/JavaScrpit-Motivation.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span id="PNameM">(prénom)</span> <span id="NameM">(nom)</span></h2>
+    <form action="thankyou.html">
+        <label>Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum <span id="TextLimit"></span></label><br>
+        <textarea id="TextZone" cols="60" rows="3"></textarea>
+        <div id="Desc">Cette description est trop courte</div>
+        <div id="NbRD">Il vous reste <span id="NbR">144</span> caractères</div>
+        <input id="Ok" type="submit" value="Ok">
+    </form>
+</div>
+</body>
+
+</html>
